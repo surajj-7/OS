@@ -1,0 +1,94 @@
+Computer
+
+memory - Primary Memory
+
+Whenever we execute a program it requires memory.
+Programs along with the informatin they access, should be in the main memory
+Main Memory -> Primary Memory -> RAM -> Random Access Memory
+
+Volatile in nature
+
+
+Memory Hierarchy
+[IMAGE]
+
+
+CPU fetches instructions from memory according to the value of the program counter
+
+
+What is Memory Management?
+In a multiprogramming computer, the operating system resides in a part of memory and the rest is used by multiple processes. The task of subdividing the memory among different processes is called memory management
+
+Why Memory Management?
+To achieve a degree of multiprogramming and proper utilization of memory, memory management is important. 
+
+
+Static Allocation & Dynamic Allocation
+
+Static -> Loading entire program into a fixed address. 
+
+Dynamic -> It is allocated based on the available memory and locations.
+
+
+
+
+
+
+Swapping -> Roll-out & Roll-in
+
+When a process is executed it must have resided in memory.
+
+swapping is the task of moving process to main memory to secondary memory for a temporary time period.
+
+when High priority process comes, low priority process will be swapped to the secondary memory. (One's higher priority process execution is completed lower priority process will be switched back to the main memory)
+
+
+To manage the memory, or memory allocation memory is divided into fixed-size partitions. 
+
+Multiple partition allocation -> process is selected from the input queue and loaded into free partition. When the process terminates, the partition becomes available for processes.
+
+Fixed Partition allocaiton -> OS maintains a table. Available memory is known as "Hole".
+When process arrives, Os searches for the hole which is large enough to store this process. 
+
+
+Solutions for Request,
+
+First Fit
+Best Fit - (Optimum Memory allocation)
+Worst fit (largest available)
+
+
+
+Fragmentation
+
+When the process terminated, it will release the occupied memory. 
+sometimes this holes are smaller in size and can't be used to assign the other process. This holes are known as fragmentation.
+
+ -Internal Fragmentation (when more size block is allocated )
+ - External Fragementation (not contiguos space, )
+
+
+To avoid external fragmentation - compaction is used.
+
+Compaction technique is all free memory space combines and makes one large block. 
+
+
+SEGMENTATION
+
+In OS, Segmentation is a memory management technique in which the memory is divided into the variable size parts. Each part is known as a segment which can be allocated to a process.
+
+The details about each segment are stored in a table called a segment table
+
+Segment table contains mainly two information about segment:
+
+Base: It is the base address of the segment
+Limit: It is the length of the segment.
+
+
+Concept of Dirty Bit
+
+A dirty bit or modified bit is a bit that is associated with a block of computer memory and indicates whether or not the corresponding block of memory has been modified. The dirty bit is set when the processor writes to (modifies) this memory.
+
+
+Memory Throttling
+memory throttling restricts read and write traffic to main memory as a means of controlling power consumption

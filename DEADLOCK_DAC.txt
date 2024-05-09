@@ -1,0 +1,45 @@
+The Producer-Consumer problem is a classical multi-process synchronization problem, that is we are trying to achieve synchronization between more than one process.
+
+There is one Producer in the producer-consumer problem, Producer is producing some items, whereas there is one Consumer that is consuming the items produced by the Producer. The same memory buffer is shared by both producers and consumers which is of fixed-size.
+
+The task of the Producer is to produce the item, put it into the memory buffer, and again start producing items. Whereas the task of the Consumer is to consume the item from the memory buffer.
+
+Semaphore is an integer variable that is used to solve the critical section problem.
+
+full
+empty
+mutex
+
+
+Mutex (Mutual Exclusion)
+
+The full form of mutex is mutual exclusion object. A mutex (mutual exclusion object) is a program object used in computer programming that allows many program threads to alternately access the same resource, such as access to a file.
+
+
+
+Deadlock
+
+A deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process. 
+
+Deadlock can arise if the following four conditions hold simultaneously (Necessary Conditions) 
+
+Mutual Exclusion: resource is non-shareable (Only one process can use at a time) 
+Hold and Wait: A process is holding at least one resource and waiting for resources. 
+No Preemption: A resource cannot be taken from a process unless the process releases the resource. 
+Circular Wait: A set of processes waiting for each other in circular form. 
+
+
+
+Deadlock Prevention
+eleminate mutual exclusion
+eleminate Hold and wait
+eliminate no preemption
+eliminate circular wait
+
+detection and recover
+
+Deadlock Avoidance
+Resource allocation graphy
+
+
+
